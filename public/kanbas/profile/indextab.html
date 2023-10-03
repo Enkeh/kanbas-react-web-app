@@ -2,116 +2,132 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Title</title>
+   <title>Kanbas</title>
+   <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+   <link href="../styles.css" rel="stylesheet"/>
+   <link href="../coursenavigation.css" rel="stylesheet"/>
+   <link href="../kanbasnavigation.css" rel="stylesheet"/>
+   <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
 <body>
-   <table border="1" width="100%">
-      <tbody>
-        <tr>
-          <td valign="top">
-            <ul>
-              <li>
-                <a href="index.html">Account</a>
-              </li>
-              <li>
-                <a href="#">Dashboard</a>
-              </li>
-              <li>
-                <a href="indextab.html">Courses</a>
-              </li>
-              <li>
-                <a href="#">Calendar</a>
-              </li>
-              <li>
-                <a href="#">Inbox</a>
-              </li>
-              <li>
-                <a href="#">History</a>
-              </li>
-              <li>
-                <a href="#">Studio</a>
-              </li>
-              <li>
-                <a href="#">Commons</a>
-              </li>
-              <li>
-                <a href="#">Help</a>
-              </li>
-            </ul>
-          </td>
-          <td valign="top">
-            <ul>
-              <li>
-                <a href="/kanbas/home.html">Home</a>
-              </li>
-              <li>
-                <a href="#">Modules</a>
-              </li>
-              <li>
-                <a href="#">Piazza</a>
-              </li>
-              <li>
-                <a href="#">Zoom Meetings</a>
-              </li>
-              <li>
-                <a href="/kanbas/assignments/index.html">Assignments</a>
-              </li>
-              <li>
-                <a href="#">Quizzes</a>
-              </li>
-              <li>
-                <a href="/kanbas/grades.html">Grades</a>
-              </li>
-              <li>
-                <a href="#">People</a>
-              </li>
-              <li>
-                <a href="#">Panopto Video</a>
-              </li>
-              <li>
-                <a href="#">Discussions</a>
-              </li>
-              <li>
-                <a href="#">Announcements</a>
-              </li>
-              <li>
-                <a href="#">Pages</a>
-              </li>
-              <li>
-                <a href="#">Files</a>
-              </li>
-              <li>
-                <a href="#">Rubrics</a>
-              </li>
-              <li>
-                <a href="#">Outcomes</a>
-              </li>
-              <li>
-                <a href="#">Collaborations</a>
-              </li>
-              <li>
-                <a href="#">Syllabus</a>
-              </li>
-              <li>
-                <a href="#">Settings</a>
-              </li>
-            </ul>
-          </td>
-          <td valign="top">
-          Nicholas Frank's Profile <br />
-          <h2>Nicholas Frank</h2>
-          <form action="edit.html">
-            <button>Edit Profile</button>
-          </form>
-          <h3>Contact</h3>
-          No registered services, you can add some on the <a href="#">settings</a> page.
-          <h3>Biography</h3>
-          Student, Computer Science, AI, Robotics, and Embedded Development interest.
-          <h3>Links</h3>
-          <a href="#">YouTube</a> 
-          </td>
-        </tr>
-      </tbody>
-    </table>
+  <div class="wd-flex-row-container">
+    <div class="bg-color-green" style="background-color: black">
+      <ul class="wd-kanbas-navigator">
+        <li class="account">
+          <a href="index.html">
+            <i class="fa fa-user fa-2x"></i></br>Account</a>
+        </li>
+        <li>
+          <a href="/kanbas/dashboard.html">
+            <i class="fa fa-tachometer-alt fa-2x"></i></br>Dashboard</a>
+        </li>
+        <li class=active>
+          <a href="indextab.html">
+            <i class="fa fa-book fa-2x"></i></br>Courses</a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-calendar-alt fa-2x"></i></br>Calendar</a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-inbox fa-2x"></i></br>Inbox</a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-clock fa-2x"></i></br>History</a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-play fa-2x"></i></br>Studio</a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-long-arrow-alt-right fa-2x"></i></br>Commons</a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-question-circle fa-2x"></i></br>Help</a>
+        </li>
+      </ul>
+    </div>
+    <div class="wd-flex-column-container">
+      <h4 style="padding-left: 30px">Nicholas Frank's Profile</h4>
+      <hr />
+    <div class="wd-flex-row-container">
+    <div class = "bg-color-blue">
+      <ul class="wd-course-navigation">
+        <ul>
+          <li>
+            <a href="/kanbas/home.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Modules</a>
+          </li>
+          <li>
+            <a href="#">Piazza</a>
+          </li>
+          <li>
+            <a href="#">Zoom Meetings</a>
+          </li>
+          <li>
+            <a href="/kanbas/assignments/index.html">Assignments</a>
+          </li>
+          <li>
+            <a href="#">Quizzes</a>
+          </li>
+          <li>
+            <a href="/kanbas/grades.html">Grades</a>
+          </li>
+          <li>
+            <a href="#">People</a>
+          </li>
+          <li>
+            <a href="#">Panopto Video</a>
+          </li>
+          <li>
+            <a href="#">Discussions</a>
+          </li>
+          <li>
+            <a href="#">Announcements</a>
+          </li>
+          <li>
+            <a href="#">Pages</a>
+          </li>
+          <li>
+            <a href="#">Files</a>
+          </li>
+          <li>
+            <a href="#">Rubrics</a>
+          </li>
+          <li>
+            <a href="#">Outcomes</a>
+          </li>
+          <li>
+            <a href="#">Collaborations</a>
+          </li>
+          <li>
+            <a href="#">Syllabus</a>
+          </li>
+          <li>
+            <a href="#">Settings</a>
+          </li>
+      </ul>
+    </div>
+    <div class="bg-color-red">
+      <div class="wd-right-aligned" >
+        <form action="edit.html">
+          <button><i class="fa fa-pencil-alt"></i> Edit Profile</button>
+        </form>
+      </div>
+      <i class="fa fa-user fa-2x" style="font-size: 10em"></i></br></br>
+        <h2>Nicholas Frank</h2></br>
+        <h3>Contact</h3>
+        No registered services, you can add some on the <a href="#" style="color:red">settings</a> page.</br></br>
+        <h3>Biography</h3>
+        Student, Computer Science, AI, Robotics, and Embedded Development interest.</br></br>
+        <h3>Links</h3>
+        <i class="fa fa-link"></i> <a href="https://www.youtube.com/@WebDevTV/videos" style="color:red">YouTube</a> 
+    </div></div></div>
 </body>
 </html>

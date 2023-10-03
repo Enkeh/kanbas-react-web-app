@@ -1,0 +1,21 @@
+.wd-account-navigation {
+    width: 200px;
+    padding: 0px;
+    margin-left: 40px;
+  }
+  .wd-account-navigation li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .wd-account-navigation li.active {
+    border-left: 2px black solid;
+  }
+  .wd-account-navigation li a {
+    color: red;
+    text-decoration: none;
+  }
+  .wd-account-navigation li.active a {
+    color: black;
+  }
