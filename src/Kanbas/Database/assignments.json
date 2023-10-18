@@ -1,0 +1,23 @@
+[
+    { "_id": "A101", "title": "Propulsion Assignment", "course": "RS101" },
+    { "_id": "A102", "title": "Combustion Analysis", "course": "RS101" },
+    { "_id": "A103", "title": "Nozzle Design Project", "course": "RS101" },
+    { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102" },
+    { "_id": "A202", "title": "Flow Analysis", "course": "RS102" },
+    { "_id": "A203", "title": "Heating Analysis", "course": "RS102" },
+    { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
+    { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
+    { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" },
+    { "_id": "A401", "title": "History of Computing Quiz", "course": "CS101" },
+    { "_id": "A402", "title": "Variables Assignment", "course": "CS101" },
+    { "_id": "A403", "title": "Loops Quiz", "course": "CS101" },
+    { "_id": "A501", "title": "Textbook Reading", "course": "CS102" },
+    { "_id": "A502", "title": "Algorithmic Design Exam", "course": "CS102" },
+    { "_id": "A503", "title": "Final Paper", "course": "CS102" },
+    { "_id": "A601", "title": "Biology Basics Form", "course": "CE101" },
+    { "_id": "A602", "title": "Renewable Energy Task", "course": "CE101" },
+    { "_id": "A603", "title": "Organics Exam", "course": "CE101" },
+    { "_id": "A701", "title": "Introduction Video Submission", "course": "CE102" },
+    { "_id": "A702", "title": "Planets Quiz", "course": "CE102" },
+    { "_id": "A703", "title": "Other Celestial Bodies Quiz", "course": "CE102" }
+  ]

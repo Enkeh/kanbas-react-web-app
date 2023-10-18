@@ -1,0 +1,25 @@
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+.wd-flex-column-container {
+    display: flex;
+    flex-direction: column;
+}
+.wd-gray-button {
+    background-color: lightgray;
+    color:black
+}
+.wd-red-button {
+    background-color: red;
+}
+.wd-raise-icons {
+    align-items: center;
+    display: flex;
+}
+  
+.breadcrumb li:not(:first-child)::before {
+    display: inline-block;
+    color: gray;
+    content: ">";
+  }

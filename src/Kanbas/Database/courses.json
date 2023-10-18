@@ -1,0 +1,23 @@
+[
+    { "_id": "RS101",
+      "name": "Rocket Propulsion", "number": "RS4550", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    },
+    { "_id": "RS102",
+      "name": "Aerodynamics", "number": "RS4560", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    },
+    { "_id": "RS103",
+      "name": "Spacecraft Design", "number": "RS4570", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    },
+    { "_id": "CS101",
+      "name": "Fundamentals of CS", "number": "CS1000", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    },
+    { "_id": "CS102",
+      "name": "Data Structures", "number": "CS1810", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    },
+    { "_id": "CE101",
+      "name": "Environmental Science", "number": "CE2140", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    },
+    { "_id": "CE102",
+      "name": "Astronomy", "number": "CE2150", "startDate": "2023-01-10", "endDate": "2023-05-15"
+    }
+]  

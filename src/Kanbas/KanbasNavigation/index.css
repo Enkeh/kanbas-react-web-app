@@ -1,0 +1,26 @@
+.wd-kanbas-navigator {
+    background-color: black;
+    color: white;
+    padding: 0px;
+    width: 80px;
+    font-size: 0.8em;
+}
+.wd-navigator-item {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.wd-navigator-item.active {
+    background-color: white;
+    color: red;
+}
+.wd-navigator-item span {
+    color: red;
+}
+.wd-navigator-item.account span {
+    color: lightgray;
+}
