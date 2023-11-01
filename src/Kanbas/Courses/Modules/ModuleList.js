@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database";
 import "./index.css";
 import { FaEllipsisVertical } from 'react-icons/fa6';
 import { FaGripVertical } from 'react-icons/fa6';
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
   return (
     <div style={{"padding" : "10px"}} className="wd-flex-column-container" >
         <div style={{"textAlign" : "right"}}>
@@ -27,8 +35,24 @@ function ModuleList() {
             <hr/>
         </div>
         <ul className="list-group">
+        <li className="list-group-item">
+            <div className="mt-2 mb-2" style={{"max-width": "406px"}}>
+                <input value={module.name} className="form-control" title="Module Name"
+                    onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}/>
+                <textarea value={module.description} className="form-control" title="Module Description"
+                    onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}/>
+                <button className="btn btn-secondary" style={{"width" : "50%", "background-color" : "green"}} 
+                    onClick={() => dispatch(addModule({ ...module, course: courseId }))}>Add</button>
+                <button className="btn btn-secondary wd-gray-button" style={{"width" : "50%"}}
+                    onClick={() => dispatch(updateModule(module))}>Update</button>
+            </div>
+        </li>
         {modules.filter((module) => module.course === courseId).map((module, index) => (
             <li key={index} className="list-group-item">
+                <div className="float-end">
+                    <button className="btn btn-secondary wd-gray-button" onClick={() => dispatch(setModule(module))}> Edit </button>
+                    <button className="btn btn-secondary wd-red-button" onClick={() => dispatch(deleteModule(module._id))}> Delete </button>
+                </div>
                 <h4 className = "wd-raise-icons ps-1"><FaGripVertical/><span className = "ps-3">{module.name}</span></h4>
                 <p className="ms-2">{module.description}</p>
             </li>

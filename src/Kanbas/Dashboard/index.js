@@ -1,15 +1,14 @@
+import { React } from "react";
 import { Link } from "react-router-dom";
 import { FaBorderAll } from 'react-icons/fa6';
 import { FaEllipsisVertical } from 'react-icons/fa6';
-import db from "../Database";
-function Dashboard() {
-  const courses = db.courses;
-  const colors = ["blue", "red", "green", "darkblue", "gray", "lightgreen", "purple","yellow","darkred","lightblue","orange","brown"]
+function Dashboard({ courses }) {
+  const colors = ["blue", "red", "green", "darkblue", "gray", "lightgreen", "purple","yellow","darkred","lightblue","orange","darkgreen","black","magenta"];
   return (
     <div>
-        <h2 style={{"padding-left" : "30px", "padding-top" : "20px"}}>Dashboard</h2>
+        <h2 className="ms-3 mt-3">Dashboard</h2>
         <hr />
-        <h4 style={{"padding-left" : "30px"}}>Published Courses ({courses.length})</h4>
+        <h4 className="ms-3"><Link to="/Kanbas/CourseEditor"><button className="btn btn-secondary wd-gray-button">Edit</button></Link> <span className="ps-2">Published Courses ({courses.length})</span></h4>
         <hr />
         <div className="d-flex flex-wrap me-3" style={{"max-width" : "1200px"}}>
             {courses.map    ((course) => {

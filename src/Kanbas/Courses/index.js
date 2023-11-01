@@ -9,9 +9,9 @@ import Grades from "./Grades";
 import { FaBars } from 'react-icons/fa6';
 import "./Modules/index.css";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const { pathname } = useLocation();
   const path = pathname.split("/");
   return (
