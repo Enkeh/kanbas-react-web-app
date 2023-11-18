@@ -1,5 +1,6 @@
-import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
@@ -9,11 +10,21 @@ import Grades from "./Grades";
 import { FaBars } from 'react-icons/fa6';
 import "./Modules/index.css";
 
-function Courses({ courses }) {
+function Courses() {
+  const URL = "http://localhost:4000/api/courses";
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
   const { pathname } = useLocation();
   const path = pathname.split("/");
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
   return (
     <div style={{"padding-left" : "10px", "padding-right" : "10px", "padding-top" : "10px"}}>
       <h3 style={{"color" : "red"}}>
